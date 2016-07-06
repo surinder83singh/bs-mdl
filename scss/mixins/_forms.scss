@@ -22,13 +22,21 @@
   &.checkbox label:after,
   &.radio label:after,
   &.checkbox-inline:after,
-  &.radio-inline:after{
+  &.radio-inline:after,
+  &.c-radio input~ .c-indicator,
+  &.c-radio input:checked~ .c-indicator,
+  &.c-checkbox input~ .c-indicator,
+  &.c-checkbox input:indeterminate~ .c-indicator,
+  &.c-checkbox input:checked~ .c-indicator{
     border-color: $color;
   }
   &.checkbox.is-checked label:after,
   &.checkbox-inline.is-checked:after,
   &.radio.is-checked label:before,
-  &.radio-inline.is-checked:before{
+  &.radio-inline.is-checked:before,
+  &.c-radio input:checked~ .c-indicator:after,
+  &.c-checkbox input:indeterminate~ .c-indicator,
+  &.c-checkbox input:checked~ .c-indicator{
     background-color: $color;
   }
   // Set the border and box shadow on specific inputs to match

@@ -11,6 +11,13 @@ Examples that focus on implementing uses of built-in components provided by Boot
 
 <div class="row bd-examples">
   <div class="col-xs-6 col-md-4">
+    <a href="{{ site.baseurl }}/examples/admin/">
+      <img class="img-thumbnail" src="{{ site.baseurl }}/examples/screenshots/starter-template.jpg" alt="">
+    </a>
+    <h4>Admin template</h4>
+    <p>Admin Theme.</p>
+  </div>
+  <div class="col-xs-6 col-md-4">
     <a href="{{ site.baseurl }}/examples/starter-template/">
       <img class="img-thumbnail" src="{{ site.baseurl }}/examples/screenshots/starter-template.jpg" alt="">
     </a>

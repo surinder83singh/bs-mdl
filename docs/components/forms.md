@@ -656,6 +656,21 @@ In the checked states, we use **base64 embedded SVG icons** from [Open Iconic](h
   <span class="c-indicator"></span>
   Check this custom checkbox
 </label>
+<label class="c-input c-checkbox has-danger">
+  <input type="checkbox">
+  <span class="c-indicator"></span>
+  Check this custom checkbox (Error)
+</label>
+<label class="c-input c-checkbox has-success">
+  <input type="checkbox">
+  <span class="c-indicator"></span>
+  Check this custom checkbox (Success)
+</label>
+<label class="c-input c-checkbox has-warning">
+  <input type="checkbox">
+  <span class="c-indicator"></span>
+  Check this custom checkbox (Warning)
+</label>
 {% endexample %}
 
 Custom checkboxes can also utilize the `:indeterminate` pseudo class when manually set via JavaScript (there is no available HTML attribute for specifying it).
@@ -704,6 +719,22 @@ Custom checkboxes and radios are inline to start. Add a parent with class `.c-in
     <input id="radioStacked2" name="radio-stacked" type="radio">
     <span class="c-indicator"></span>
     Or toggle this other custom radio
+  </label>
+  <h3>Validations</h3>
+  <label class="c-input c-radio has-success">
+    <input name="radio" type="radio">
+    <span class="c-indicator"></span>
+    Or toggle this other custom radio (Success)
+  </label>
+  <label class="c-input c-radio has-warning">
+    <input name="radio" type="radio">
+    <span class="c-indicator"></span>
+    Or toggle this other custom radio (Warning)
+  </label>
+  <label class="c-input c-radio has-danger">
+    <input name="radio" type="radio">
+    <span class="c-indicator"></span>
+    Or toggle this other custom radio (Error)
   </label>
 </div>
 {% endexample %}

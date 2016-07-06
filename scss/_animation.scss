@@ -19,9 +19,11 @@
 
 .collapsing {
   position: relative;
-  height: 0;
   overflow: hidden;
   transition-timing-function: ease;
   transition-duration: .35s;
-  transition-property: height;
+  transition-property: height, width;
+}
+.collapsing:not(.width) {
+  height:0;
 }

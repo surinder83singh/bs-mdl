@@ -59,7 +59,7 @@ Cards support a wide variety of content, including images, text, list groups, li
 {% endexample %}
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <ul class="list-group list-group-flush">
     <li class="list-group-item">Cras justo odio</li>
     <li class="list-group-item">Dapibus ac facilisis in</li>
@@ -69,7 +69,7 @@ Cards support a wide variety of content, including images, text, list groups, li
 {% endexample %}
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <img class="card-img-top" data-src="holder.js/100px180/?text=Image cap" alt="Card image cap">
   <div class="card-block">
     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -78,7 +78,7 @@ Cards support a wide variety of content, including images, text, list groups, li
 {% endexample %}
 
 {% example html %}
-<div class="card card-block">
+<div class="card card-block shadow-2dp">
   <h4 class="card-title">Card title</h4>
   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
   <a href="#" class="card-link">Card link</a>
@@ -87,7 +87,7 @@ Cards support a wide variety of content, including images, text, list groups, li
 {% endexample %}
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
     <h6 class="card-subtitle text-muted">Support card subtitle</h6>
@@ -110,14 +110,14 @@ Using the grid:
 {% example html %}
 <div class="row">
   <div class="col-sm-6">
-    <div class="card card-block">
+    <div class="card card-block shadow-2dp">
       <h3 class="card-title">Special title treatment</h3>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
     </div>
   </div>
   <div class="col-sm-6">
-    <div class="card card-block">
+    <div class="card card-block shadow-2dp">
       <h3 class="card-title">Special title treatment</h3>
       <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
       <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -129,7 +129,7 @@ Using the grid:
 Using custom widths:
 
 {% example html %}
-<div class="card card-block" style="width: 18rem;">
+<div class="card card-block shadow-2dp" style="width: 18rem;">
   <h3 class="card-title">Special title treatment</h3>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -141,19 +141,19 @@ Using custom widths:
 You can quickly change the text alignment of any card—in its entirety or specific parts—with our [text align classes]({{ site.baseurl }}/components/utilities/#text-alignment).
 
 {% example html %}
-<div class="card card-block">
+<div class="card card-block shadow-2dp">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 
-<div class="card card-block text-xs-center">
+<div class="card card-block text-xs-center shadow-2dp">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
 </div>
 
-<div class="card card-block text-xs-right">
+<div class="card card-block text-xs-right shadow-2dp">
   <h4 class="card-title">Special title treatment</h4>
   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
   <a href="#" class="btn btn-primary">Go somewhere</a>
@@ -165,7 +165,7 @@ You can quickly change the text alignment of any card—in its entirety or speci
 Add an optional header and/or footer within a card.
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <div class="card-header">
     Featured
   </div>
@@ -178,7 +178,7 @@ Add an optional header and/or footer within a card.
 {% endexample %}
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <h3 class="card-header">Featured</h3>
   <div class="card-block">
     <h4 class="card-title">Special title treatment</h4>
@@ -189,7 +189,7 @@ Add an optional header and/or footer within a card.
 {% endexample %}
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <div class="card-header">
     Quote
   </div>
@@ -203,7 +203,7 @@ Add an optional header and/or footer within a card.
 {% endexample %}
 
 {% example html %}
-<div class="card text-xs-center">
+<div class="card text-xs-center shadow-2dp">
   <div class="card-header">
     Featured
   </div>
@@ -223,7 +223,7 @@ Add an optional header and/or footer within a card.
 Similar to headers and footers, cards include top and bottom image caps.
 
 {% example html %}
-<div class="card">
+<div class="card shadow-2dp">
   <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
@@ -231,7 +231,7 @@ Similar to headers and footers, cards include top and bottom image caps.
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
 </div>
-<div class="card">
+<div class="card shadow-2dp">
   <div class="card-block">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -246,7 +246,7 @@ Similar to headers and footers, cards include top and bottom image caps.
 Turn an image into a card background and overlay your card's text. Depending on the image, you may or may not need `.card-inverse` (see below).
 
 {% example html %}
-<div class="card card-inverse">
+<div class="card card-inverse shadow-2dp">
   <img class="card-img" data-src="holder.js/100px270/#55595c:#373a3c/text:Card image" alt="Card image">
   <div class="card-img-overlay">
     <h4 class="card-title">Card title</h4>
@@ -263,7 +263,7 @@ Cards include a class for quickly toggling **the text color**. By default, cards
 You can also use `.card-inverse` with the [contextual backgrounds variants](#background-variants).
 
 {% example html %}
-<div class="card card-inverse" style="background-color: #333; border-color: #333;">
+<div class="card card-inverse shadow-2dp" style="background-color: #333; border-color: #333;">
   <div class="card-block">
     <h3 class="card-title">Special title treatment</h3>
     <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
@@ -277,7 +277,7 @@ You can also use `.card-inverse` with the [contextual backgrounds variants](#bac
 Cards include their own variant classes for quickly changing the `background-color` and `border-color` of a card. **Darker colors require the use of `.card-inverse`.**
 
 {% example html %}
-<div class="card card-inverse card-primary text-xs-center">
+<div class="card card-inverse card-primary text-xs-center shadow-2dp">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -285,7 +285,7 @@ Cards include their own variant classes for quickly changing the `background-col
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-success text-xs-center">
+<div class="card card-inverse card-success text-xs-center shadow-2dp">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -293,7 +293,7 @@ Cards include their own variant classes for quickly changing the `background-col
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-info text-xs-center">
+<div class="card card-inverse card-info text-xs-center shadow-2dp">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -301,7 +301,7 @@ Cards include their own variant classes for quickly changing the `background-col
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-warning text-xs-center">
+<div class="card card-inverse card-warning text-xs-center shadow-2dp">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -309,7 +309,7 @@ Cards include their own variant classes for quickly changing the `background-col
     </blockquote>
   </div>
 </div>
-<div class="card card-inverse card-danger text-xs-center">
+<div class="card card-inverse card-danger text-xs-center shadow-2dp">
   <div class="card-block">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
@@ -326,7 +326,7 @@ Use card groups to render cards as a single, attached element with equal width a
 Only applies to small devices and above.
 
 {% example html %}
-<div class="card-group">
+<div class="card-group shadow-2dp">
   <div class="card">
     <img class="card-img-top" data-src="holder.js/100px180/" alt="Card image cap">
     <div class="card-block">
@@ -365,7 +365,7 @@ Only applies to small devices and above.
 {% example html %}
 <div class="card-deck-wrapper">
   <div class="card-deck">
-    <div class="card">
+    <div class="card shadow-2dp">
       <img class="card-img-top" data-src="holder.js/100px200/" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">Card title</h4>
@@ -373,7 +373,7 @@ Only applies to small devices and above.
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
-    <div class="card">
+    <div class="card shadow-2dp">
       <img class="card-img-top" data-src="holder.js/100px200/" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">Card title</h4>
@@ -381,7 +381,7 @@ Only applies to small devices and above.
         <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
       </div>
     </div>
-    <div class="card">
+    <div class="card shadow-2dp">
       <img class="card-img-top" data-src="holder.js/100px200/" alt="Card image cap">
       <div class="card-block">
         <h4 class="card-title">Card title</h4>
@@ -401,14 +401,14 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
 
 {% example html %}
 <div class="card-columns">
-  <div class="card">
+  <div class="card shadow-2dp">
     <img class="card-img-top" data-src="holder.js/100px160/" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Card title that wraps to a new line</h4>
       <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
     </div>
   </div>
-  <div class="card card-block">
+  <div class="card card-block shadow-2dp">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer>
@@ -418,7 +418,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
       </footer>
     </blockquote>
   </div>
-  <div class="card">
+  <div class="card shadow-2dp">
     <img class="card-img-top" data-src="holder.js/100px160/" alt="Card image cap">
     <div class="card-block">
       <h4 class="card-title">Card title</h4>
@@ -426,7 +426,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
       <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
   </div>
-  <div class="card card-block card-inverse card-primary text-xs-center">
+  <div class="card card-block card-inverse card-primary text-xs-center shadow-2dp">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat.</p>
       <footer>
@@ -436,15 +436,15 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
       </footer>
     </blockquote>
   </div>
-  <div class="card card-block text-xs-center">
+  <div class="card card-block text-xs-center shadow-2dp">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
   </div>
-  <div class="card">
+  <div class="card shadow-2dp">
     <img class="card-img" data-src="holder.js/100px260/" alt="Card image">
   </div>
-  <div class="card card-block text-xs-right">
+  <div class="card card-block text-xs-right shadow-2dp">
     <blockquote class="card-blockquote">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
       <footer>
@@ -454,7 +454,7 @@ Cards can be organized into [Masonry](http://masonry.desandro.com)-like columns 
       </footer>
     </blockquote>
   </div>
-  <div class="card card-block">
+  <div class="card card-block shadow-2dp">
     <h4 class="card-title">Card title</h4>
     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>

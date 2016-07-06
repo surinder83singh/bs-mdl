@@ -119,7 +119,8 @@ module.exports = function (grunt) {
           'js/dist/tooltip.js'   : 'js/src/tooltip.js',
           'js/dist/popover.js'   : 'js/src/popover.js',
           'js/dist/input.js'      : 'js/src/input.js',
-          'js/dist/checkbox.js'   : 'js/src/checkbox.js'
+          'js/dist/checkbox.js'   : 'js/src/checkbox.js',
+          'js/dist/drawer.js'   : 'js/src/drawer.js'
         }
       },
       dist: {
@@ -147,7 +148,8 @@ module.exports = function (grunt) {
           'dist/js/umd/tooltip.js'   : 'js/src/tooltip.js',
           'dist/js/umd/popover.js'   : 'js/src/popover.js',
           'dist/js/umd/input.js'   : 'js/src/input.js',
-          'dist/js/umd/checkbox.js'   : 'js/src/checkbox.js'
+          'dist/js/umd/checkbox.js'   : 'js/src/checkbox.js',
+          'dist/js/umd/drawer.js'   : 'js/src/drawer.js'
         }
       }
     },
@@ -210,7 +212,8 @@ module.exports = function (grunt) {
           'js/src/tooltip.js',
           'js/src/popover.js',
           'js/src/input.js',
-          'js/src/checkbox.js'
+          'js/src/checkbox.js',
+          'js/src/drawer.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }
@@ -339,6 +342,14 @@ module.exports = function (grunt) {
           '**/*'
         ],
         dest: 'docs/dist/'
+      },
+      fonts: {
+        expand: true,
+        cwd: 'font-awesome-4.6.3/fonts/',
+        src: [
+          '**/*'
+        ],
+        dest: 'dist/fonts/'
       }
     },
 
@@ -510,7 +521,7 @@ module.exports = function (grunt) {
   grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
-  grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
+  grunt.registerTask('dist', ['clean:dist', 'copy:fonts', 'dist-css', 'dist-js']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);
