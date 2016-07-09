@@ -79,6 +79,8 @@
 
         value: function toggle() {
           var $el = $(document.body);
+          var $drawer = $el.find('.drawer-panel');
+          if ($drawer.css("position") != "fixed") return;
 
           if ($el.hasClass(ClassName.ACTIVE)) {
             $backdrop.fadeOut();

@@ -60,17 +60,34 @@ fieldset[disabled] a.btn {
 .btn-flat{
   background-color:transparent;
   box-shadow: none;
-  &:hover {
+  &:hover,
+  &.hover{
     background-color: rgba(158,158,158,.2);
     box-shadow: none;
   }
 }
-.btn-fab{
+.btn-fab-text i{margin-right:5px;}
+.btn-fab,
+.btn-fab-sm,
+.btn-fab-xs{
   border-radius: 50%;
-  height: 56px;
-  width: 56px;
+  height:56px;
+  width:56px;
   overflow: hidden;
   line-height: normal;
+}
+.btn-fab-sm{
+  height:40px;
+  width:40px;
+  padding:5px;
+}
+.btn-fab-xs{
+  height:30px;
+  width:30px;
+  padding:0px;
+}
+.btn-default{
+  @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border);
 }
 .btn-primary {
   @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
@@ -162,6 +179,10 @@ fieldset[disabled] a.btn {
 .btn-sm {
   // line-height: ensure proper height of button next to small input
   @include button-size($btn-padding-y-sm, $btn-padding-x-sm, $font-size-sm, $line-height-sm, $btn-border-radius);
+}
+.btn-xs {
+  // line-height: ensure proper height of button next to small input
+  @include button-size($btn-padding-y-xs, $btn-padding-x-xs, $font-size-xs, $line-height-xs, $btn-border-radius);
 }
 
 

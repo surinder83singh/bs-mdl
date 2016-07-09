@@ -6,6 +6,7 @@
 
 .dropdown-toggle {
   // Generate the caret automatically
+  cursor:pointer;
   &::after {
     display: inline-block;
     width: 0;
@@ -54,7 +55,12 @@
   border: $dropdown-border-width solid $dropdown-border-color;
   border-radius: 3px;
   @include border-radius($border-radius);
-  @include box-shadow(0 6px 12px rgba(0,0,0,.175));
+  //@include box-shadow(0 6px 12px rgba(0,0,0,.175));
+  @include shadow-2dp();
+
+  //transition:all 0.2s ease;
+  //transform-origin:left top;
+  //transform:scale(0, 0);
 }
 
 // Dividers (basically an `<hr>`) within the dropdown
@@ -118,6 +124,10 @@
   // Show the menu
   > .dropdown-menu {
     display: block;
+    //transform:scale(1, 1);
+    animation:fadeIn ease-in 1;
+    animation-fill-mode:forwards;
+    animation-duration:0.2s;
   }
 
   // Remove the outline when :focus is triggered
@@ -133,6 +143,7 @@
 .dropdown-menu-right {
   right: 0;
   left: auto; // Reset the default from `.dropdown-menu`
+  //transform-origin:right top;
 }
 // With v3, we enabled auto-flipping if you have a dropdown within a right
 // aligned nav component. To enable the undoing of that, we provide an override
@@ -191,4 +202,8 @@
     bottom: 100%;
     margin-bottom: 2px;
   }
+}
+
+.dropdown-toggle.no-arrow:after{
+  display:none;
 }

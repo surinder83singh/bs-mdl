@@ -4,8 +4,12 @@
   position: relative;
   display: inline-block;
   vertical-align: middle; // match .btn alignment given font-size hack above
-
+  @include shadow-2dp();
+  > .btn-group{
+    box-shadow:none;
+  }
   > .btn {
+    box-shadow:none;
     position: relative;
     float: left;
 
@@ -47,6 +51,14 @@
     margin-left: 5px;
   }
 }
+.btn-group-justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+
+.btn-group-justified > .btn-group .btn{width:100%;}
 
 .btn-group > .btn:not(:first-child):not(:last-child):not(.dropdown-toggle) {
   border-radius: 0;
@@ -69,6 +81,11 @@
 // Custom edits for including btn-groups within btn-groups (useful for including dropdown buttons within a btn-group)
 .btn-group > .btn-group {
   float: left;
+}
+.btn-group-justified > .btn, .btn-group-justified > .btn-group {
+    float: none;
+    display: table-cell;
+    width: 1%;
 }
 .btn-group > .btn-group:not(:first-child):not(:last-child) > .btn {
   border-radius: 0;
@@ -95,6 +112,7 @@
 // Remix the default button sizing classes into new ones for easier manipulation.
 
 .btn-group-sm > .btn { @extend .btn-sm; }
+.btn-group-xs > .btn { @extend .btn-xs; }
 .btn-group-lg > .btn { @extend .btn-lg; }
 
 

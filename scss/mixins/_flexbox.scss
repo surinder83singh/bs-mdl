@@ -5,10 +5,22 @@
 @mixin hv-box(){
     display: flex;
     &.center{
-            justify-content: center;
+        justify-content: center;
     }
     &.center.center{
         align-items:center; 
+    }
+    &.space-around{
+        justify-content:space-around;
+    }
+    &.flex-start{
+        justify-content:flex-start;
+    }
+    &.flex-end{
+        justify-content:flex-end;
+    }
+    &.space-between{
+        justify-content:space-between;
     }
 
     &.wrap{

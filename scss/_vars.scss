@@ -155,14 +155,14 @@ $font-size-root:             16px !default;
 $font-size-base:             1rem !default;
 $font-size-lg:               1.25rem !default;
 $font-size-sm:               .875rem !default;
-$font-size-xs:               .75rem !default;
+$font-size-xs:               .7rem;
 
-$font-size-h1:               2.5rem !default;
-$font-size-h2:               2rem !default;
-$font-size-h3:               1.75rem !default;
-$font-size-h4:               1.5rem !default;
-$font-size-h5:               1.25rem !default;
-$font-size-h6:               1rem !default;
+$font-size-h1:               2.0625rem;
+$font-size-h2:               1.6875rem;
+$font-size-h3:               1.4375rem;
+$font-size-h4:               1.0625rem;
+$font-size-h5:               0.8125rem;
+$font-size-h6:               0.75rem;
 
 $display1-size:               6rem !default;
 $display2-size:               5.5rem !default;
@@ -177,6 +177,7 @@ $display4-weight:             300 !default;
 $line-height:                1.5 !default;
 
 $headings-margin-bottom:     ($spacer / 2) !default;
+$headings-margin-top:        1.125rem;
 $headings-font-family:       inherit !default;
 $headings-font-weight:       500 !default;
 $headings-line-height:       1.1 !default;
@@ -209,6 +210,7 @@ $list-inline-padding:         5px !default;
 
 $line-height-lg:         (4 / 3) !default;
 $line-height-sm:         1.5 !default;
+$line-height-xs:         1.5;
 
 $border-radius:          2px;
 $border-radius-lg:       .3rem !default;
@@ -245,6 +247,10 @@ $btn-padding-x:                  1rem !default;
 $btn-padding-y:                  .375rem !default;
 $btn-font-weight:                normal !default;
 
+$btn-default-color:              #000000;
+$btn-default-bg:                 rgba(255, 255, 255, 0.2);
+$btn-default-border:             transparent;
+
 $btn-primary-color:              #fff !default;
 $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $btn-primary-bg !default;
@@ -271,8 +277,15 @@ $btn-danger-border:              $btn-danger-bg !default;
 
 $btn-link-disabled-color:        $gray-light !default;
 
+$btn-padding-x-sm:               .65rem;
+$btn-padding-y-sm:               .15rem;
+$btn-padding-y-xs:               .05rem;
+
 $btn-padding-x-sm:               .75rem !default;
 $btn-padding-y-sm:               .25rem !default;
+
+$btn-padding-x-xs:               .65rem !default;
+$btn-padding-y-xs:               .15rem !default;
 
 $btn-padding-x-lg:               1.25rem !default;
 $btn-padding-y-lg:               .75rem !default;
@@ -335,7 +348,7 @@ $form-icon-danger: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My
 
 $dropdown-bg:                    #fff !default;
 $dropdown-border-color:          rgba(0,0,0,.15) !default;
-$dropdown-border-width:          $border-width !default;
+$dropdown-border-width:          0;
 $dropdown-divider-bg:            #e5e5e5 !default;
 
 $dropdown-link-color:            $gray-dark !default;

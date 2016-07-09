@@ -85,14 +85,45 @@
 //
 
 .card-header {
+  position:relative;
   padding: $card-spacer-y $card-spacer-x;
-  background-color: $card-cap-bg;
-  border-bottom: $card-border-width solid $card-border-color;
-
+  //background-color: $card-cap-bg;
+  //border-bottom: $card-border-width solid $card-border-color;
   &:first-child {
     @include border-radius($card-border-radius-inner $card-border-radius-inner 0 0);
   }
 }
+.card-padding,
+.card-header{
+  padding:30px;
+}
+
+.card-header + .card-padding{
+  padding-top:0px;
+}
+
+.card-header.img{
+  background-size: cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.card-header.md-size{
+  height:150px;
+}
+
+.card-header .actions{
+  position:absolute;
+  right: 20px;
+  top: 20px;
+}
+.card-header h2{
+  margin: 0;
+  line-height: 100%;
+  font-size: 1.0625rem;
+  font-weight: 400;
+}
+
+.card-header h2+small{margin-top: 0.5rem;display: inline-block;}
 
 .card-footer {
   padding: $card-spacer-y $card-spacer-x;

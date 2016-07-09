@@ -36,11 +36,13 @@ const Dropdown = (($) => {
 
   const ClassName = {
     BACKDROP : 'dropdown-backdrop',
+    RIGHT    : 'dropdown-menu-right',
     DISABLED : 'disabled',
     OPEN     : 'open'
   }
 
   const Selector = {
+    MENU          : ".dropdown-menu",
     BACKDROP      : '.dropdown-backdrop',
     DATA_TOGGLE   : '[data-toggle="dropdown"]',
     FORM_CHILD    : '.dropdown form',
@@ -111,9 +113,18 @@ const Dropdown = (($) => {
 
       this.focus()
       this.setAttribute('aria-expanded', 'true')
+      let $parent = $(parent);
 
-      $(parent).toggleClass(ClassName.OPEN)
-      $(parent).trigger($.Event(Event.SHOWN, relatedTarget))
+      let $menu = $parent.find(Selector.MENU);
+      let hOffset = parseInt($menu.attr("h-offset"), 10) || 0;
+      let menuCss = {
+        marginTop: parseInt($menu.attr("v-offset"), 10) || 2
+      }
+      menuCss[ $menu.hasClass(ClassName.RIGHT) ? "marginRight": "marginLeft"] = hOffset;
+      $menu.css(menuCss);
+
+      $parent.toggleClass(ClassName.OPEN)
+      $parent.trigger($.Event(Event.SHOWN, relatedTarget))
 
       return false
     }

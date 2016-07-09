@@ -120,7 +120,8 @@ module.exports = function (grunt) {
           'js/dist/popover.js'   : 'js/src/popover.js',
           'js/dist/input.js'      : 'js/src/input.js',
           'js/dist/checkbox.js'   : 'js/src/checkbox.js',
-          'js/dist/drawer.js'   : 'js/src/drawer.js'
+          'js/dist/drawer.js'   : 'js/src/drawer.js',
+          'js/dist/scrolleffect.js'   : 'js/src/scrolleffect.js'
         }
       },
       dist: {
@@ -149,7 +150,8 @@ module.exports = function (grunt) {
           'dist/js/umd/popover.js'   : 'js/src/popover.js',
           'dist/js/umd/input.js'   : 'js/src/input.js',
           'dist/js/umd/checkbox.js'   : 'js/src/checkbox.js',
-          'dist/js/umd/drawer.js'   : 'js/src/drawer.js'
+          'dist/js/umd/drawer.js'   : 'js/src/drawer.js',
+          'dist/js/umd/scrolleffect.js'   : 'js/src/scrolleffect.js'
         }
       }
     },
@@ -213,7 +215,8 @@ module.exports = function (grunt) {
           'js/src/popover.js',
           'js/src/input.js',
           'js/src/checkbox.js',
-          'js/src/drawer.js'
+          'js/src/drawer.js',
+          'js/src/scrolleffect.js'
         ],
         dest: 'dist/js/<%= pkg.name %>.js'
       }

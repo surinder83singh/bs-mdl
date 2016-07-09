@@ -1,7 +1,7 @@
 .drawer-panel{
 	position: fixed;
 	background-color: #fff;
-	width: 300px;
+	width: 270px;
 	height: 100vh;
 	left:0px;
 	top:0px;
@@ -38,4 +38,15 @@ body.drawer-in .drawer-panel{
 }
 body.drawer-in{
 	overflow:hidden;
+}
+@include media-breakpoint-up("lg") {
+	.drawer-panel{
+		position: static;
+	    height: auto;
+	    transform: none;
+	    box-shadow: none;
+	    display:inline-block;
+	    z-index:1;
+	    background-color: transparent;
+	}
 }

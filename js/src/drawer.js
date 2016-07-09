@@ -57,7 +57,11 @@ const Drawer = (($) => {
     // public
 
     static toggle() {
-      var $el = $(document.body);
+      let $el = $(document.body);
+      let $drawer = $el.find('.drawer-panel');
+      if($drawer.css("position") != "fixed")
+        return
+
       
       if ($el.hasClass(ClassName.ACTIVE)) {
         $backdrop.fadeOut();

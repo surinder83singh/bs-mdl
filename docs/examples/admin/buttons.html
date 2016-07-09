@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>Album example for Bootstrap</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="admin.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="body" data-scrolleffect>
+	<div class="navbar navbar-light bg-faded navbar-fixed-top h-box header scrolleffect-top">
+		<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="drawer" data-target="#drawer-panel">
+			&#9776;
+		</button>
+		<div class="logo-container">
+			<h4>Material</h4>
+			<div class="tag-line">admin extended</div>
+		</div>
+		<div class="flex h-box center hidden-sm-down">
+			<input class="flex search-input" placeholder="Search">
+		</div>
+		<div class="h-box center">
+			<div class="dropdown">
+				<div class="round profile-img dropdown-toggle no-arrow"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+					style="background-image:url(https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/128.jpg);"
+				></div>
+				<div class="dropdown-menu dropdown-menu-right" v-offset="-44" h-offset="-2">
+					<a class="dropdown-item icon" href="#"><i class="fa fa-sign-in"></i> Sign IN</a>
+					<a class="dropdown-item icon" href="#"><i class="fa fa-gear"></i> Settings</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper h-box">
+		<div class="drawer-panel" id="drawer-panel">
+			<h2 class="drawer-header hidden-lg-up h-box center">Material</h2>
+			<div class="drawer-top-header hidden-md-down h-box center">
+				<button class="btn btn-fab-small btn-default active"><i class="fa fa-user"></i></button>
+				<button class="btn btn-fab-small btn-default"><i class="fa fa-th"></i></button>
+				<button class="btn btn-fab-small btn-default"><i class="fa fa-sign-in"></i></button>
+			</div>
+			<div class="drawer-content">
+				<ul class="nav nav-pills nav-stacked" data-toggle="drawer">
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-home"></i> Home
+						</a>
+						<div class="dropdown-menu" h-offset="10">
+							<a class="dropdown-item icon" href="#"><i class="fa fa-sign-in"></i> Sign IN</a>
+							<a class="dropdown-item icon" href="#"><i class="fa fa-gear"></i> Settings</a>
+						</div>
+					</li>
+					<li class="nav-item"><a class="nav-link active" href="#"><i class="fa fa-home"></i> Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link disabled" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-contents flex container">
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="card-header light-header">
+                        <h2>Buttons</h2>
+                        <small>Use any of the available button classes to quickly create a styled button.</small>
+                    </div>
+					<div class="card shadow-2dp">
+                        <div class="card-body card-padding">
+                            <p class="f-500 c-black m-b-20">Flat Buttons</p>
+                            <div class="btn-demo">
+                                <button class="btn btn-flat btn-default">Default</button>
+                                <button class="btn btn-flat btn-info">Info</button>
+                                <button class="btn btn-flat btn-primary">Primary</button>
+                                <button class="btn btn-flat btn-success">Success</button>
+                                <button class="btn btn-flat btn-warning">Warning</button>
+                                <button class="btn btn-flat btn-danger">Danger</button>
+                            </div>
+                            <br/>
+                            <br/>
+                            <p class="f-500 c-black m-b-20">Bootstrap Color Schemes</p>
+
+                            <div class="btn-demo">
+                                <button class="btn btn-default">Default</button>
+                                <button class="btn btn-info">Info</button>
+                                <button class="btn btn-primary">Primary</button>
+                                <button class="btn btn-success">Success</button>
+                                <button class="btn btn-warning">Warning</button>
+                                <button class="btn btn-danger">Danger</button>
+                            </div>
+                            <!--
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-20">Optional Material Design Colors</p>
+                            <div class="btn-colors btn-demo"> <!- - Optional container for demo porpose only - ->
+                                <button class="btn palette-Cyan bg">Cyan</button>
+                                <button class="btn palette-Teal bg">Teal</button>
+                                <button class="btn palette-Amber bg">Amber</button>
+                                <button class="btn palette-Orange bg">Orange</button>
+                                <button class="btn palette-Deep-Orange bg">Deep Orange</button>
+                                <button class="btn palette-Red bg">Red</button>
+                                <button class="btn palette-Pink bg">Pink</button>
+                                <button class="btn palette-Light-Blue bg">Light Blue</button>
+                                <button class="btn palette-Blue bg">Blue</button>
+                                <button class="btn palette-Indigo bg">Indigo</button>
+                                <button class="btn palette-Lime bg">Lime</button>
+                                <button class="btn palette-Light-Green bg">Light Green</button>
+                                <button class="btn palette-Green bg">Green</button>
+                                <button class="btn palette-Purple bg">Purple</button>
+                                <button class="btn palette-Deep-Purple bg">Deep Purple</button>
+                                <button class="btn palette-Grey bg">Gray</button>
+                                <button class="btn palette-Blue-Grey bg">Blue Gray</button>
+                                <button class="btn palette-Black bg">Black</button>
+                            </div>
+                            -->
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-5">Button Sizes</p>
+                            <small>Fancy larger or smaller buttons? Add the button sizing classes.</small>
+
+                            <br/>
+                            <br/>
+
+                            <div class="btn-demo">
+                                <button class="btn btn-primary btn-lg">Large</button>
+                                <button class="btn btn-primary">Default</button>
+                                <button class="btn btn-primary btn-sm">Small</button>
+                                <button class="btn btn-primary btn-xs">Extra Small</button>
+
+                                <br /><br />
+                                <button class="btn btn-default btn-fab"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-default btn-fab-sm"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-default btn-fab-xs"><i class="fa fa-home"></i></button>
+                                <br /><br />
+                                <button class="btn btn-primary btn-fab"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-primary btn-fab-sm"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-primary btn-fab-xs"><i class="fa fa-home"></i></button>
+                                <br /><br />
+                                <button class="btn btn-success btn-fab"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-success btn-fab-sm"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-success btn-fab-xs"><i class="fa fa-home"></i></button>
+                            </div>
+
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-20">Disable Stat</p>
+
+                            <div class="btn-demo">
+                                <button class="btn btn-default" disabled="disabled">Default</button>
+                                <button class="btn btn-info" disabled="disabled">Info</button>
+                                <button class="btn btn-primary" disabled="disabled">Primary</button>
+                                <button class="btn btn-success" disabled="disabled">Success</button>
+                                <button class="btn btn-warning" disabled="disabled">Warning</button>
+                                <button class="btn btn-danger" disabled="disabled">Danger</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Button Icons <small>You can refer the Icons page for the complete list of Font Icons which are inspired by Material Design</small></h2>
+                        </div>
+                        <div class="card-body card-padding">
+                            <div class="btn-demo">
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-home"></i> Home</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-search"></i> Search</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-ellipsis-h"></i> More</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-arrow-right"></i> Forward</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-arrow-left"></i> Back</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-refresh"></i> Sync</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-check"></i> Check</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-close"></i> Check</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-bars"></i> Menu</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-th"></i> Apps</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-check-square-o"></i> Done</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-line-chart"></i> Up</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-th"></i> Get</button>
+                                <button class="btn btn-default btn-fab-text"><i class="fa fa-phone"></i> Call</button>
+
+                                <br/>
+                                <br/>
+                                <br/>
+
+
+                                <button class="btn btn-default"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-search"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-ellipsis-h"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-arrow-right"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-arrow-left"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-check"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-close"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-bars"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-th"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-check-square-o"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-line-chart"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-th"></i></button>
+                                <button class="btn btn-default"><i class="fa fa-phone"></i></button>
+
+                                <br/>
+                                <br/>
+
+                                <button class="btn btn-primary"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-info"><i class="fa fa-search"></i></button>
+                                <button class="btn btn-success"><i class="fa fa-ellipsis-h"></i></button>
+                                <button class="btn btn-warning"><i class="fa fa-arrow-right"></i></button>
+                                <button class="btn btn-danger"><i class="fa fa-arrow-left"></i></button>
+                                <!--
+                                <button class="btn palette-Teal bg"><i class="fa fa-refresh"></i></button>
+                                <button class="btn palette-Orange bg"><i class="fa fa-check"></i></button>
+                                <button class="btn palette-Cyan bg"><i class="fa fa-close"></i></button>
+                                <button class="btn palette-Light-Green bg"><i class="fa fa-bars"></i></button>
+                                <button class="btn palette-Lime bg"><i class="fa fa-th"></i></button>
+                                <button class="btn palette-Amber bg"><i class="fa fa-check-square-o"></i></button>
+                                <button class="btn palette-Gray bg"><i class="fa fa-line-chart"></i></button>
+                                <button class="btn palette-Light-Blue bg"><i class="fa fa-th"></i></button>
+                                <button class="btn palette-Deep-Orange bg"><i class="fa fa-phone"></i></button>
+                                -->
+                                <br/>
+                                <br/>
+                                <br/>
+
+                                <button class="btn btn-default btn-fab"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-search"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-ellipsis-h"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-arrow-right"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-arrow-left"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-refresh"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-check"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-close"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-bars"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-th"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-check-square-o"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-line-chart"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-th"></i></button>
+                                <button class="btn btn-default btn-fab"><i class="fa fa-phone"></i></button>
+
+                                <br/>
+                                <br/>
+
+                                <button class="btn btn-primary btn-fab"><i class="fa fa-home"></i></button>
+                                <button class="btn btn-info btn-fab"><i class="fa fa-search"></i></button>
+                                <button class="btn btn-success btn-fab"><i class="fa fa-ellipsis-h"></i></button>
+                                <button class="btn btn-warning btn-fab"><i class="fa fa-arrow-right"></i></button>
+                                <button class="btn btn-danger btn-fab"><i class="fa fa-arrow-left"></i></button>
+                                <!--
+                                <button class="btn palette-Teal btn-fab bg"><i class="fa fa-refresh"></i></button>
+                                <button class="btn palette-Orange btn-fab bg"><i class="fa fa-check"></i></button>
+                                <button class="btn palette-Cyan btn-fab bg"><i class="fa fa-close"></i></button>
+                                <button class="btn palette-Light-Green bg btn-fab"><i class="fa fa-bars"></i></button>
+                                <button class="btn palette-Lime btn-fab bg"><i class="fa fa-th"></i></button>
+                                <button class="btn palette-Amber btn-fab bg"><i class="fa fa-check-square-o"></i></button>
+                                <button class="btn palette-Gray btn-fab bg"><i class="fa fa-line-chart"></i></button>
+                                <button class="btn palette-Light-Blue btn-fab bg"><i class="fa fa-th"></i></button>
+                                <button class="btn palette-Deep-Orange btn-fab bg"><i class="fa fa-phone"></i></button>
+                                -->
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Block Level Buttons <small>Create block level buttons - those that span the full width of a parent - by adding .btn-block.</small></h2>
+                        </div>
+
+                        <div class="card-padding card-body">
+                            <button class="btn btn-default btn-block">Default</button>
+                            <br/>
+                            <br/>
+                            <button class="btn btn-primary btn-block">Primary</button>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header">
+                            <h2>Button Groups <small>Group a series of buttons together on a single line with the button group</small></h2>
+                        </div>
+                        <div class="card-body card-padding">
+                            <p class="f-500 c-black m-b-20">Basic Example</p>
+                            <div class="btn-group-demo">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-info">Left</button>
+                                    <button type="button" class="btn btn-info">Middle</button>
+                                    <button type="button" class="btn btn-info">Right</button>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-success">Left</button>
+                                    <button type="button" class="btn btn-success">Middle</button>
+                                    <button type="button" class="btn btn-success">Right</button>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-warning">Left</button>
+                                    <button type="button" class="btn btn-warning">Middle</button>
+                                    <button type="button" class="btn btn-warning">Right</button>
+                                </div>
+                            </div>
+
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-5">Button Toolbars</p>
+                            <small>Combine sets of '.btn-group.' into a '.btn-toolbar' for more complex components.</small>
+
+                            <br/>
+                            <br/>
+
+                            <div class="btn-toolbar" role="toolbar">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">1</button>
+                                    <button type="button" class="btn btn-default">2</button>
+                                    <button type="button" class="btn btn-default">3</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">4</button>
+                                    <button type="button" class="btn btn-default">5</button>
+                                    <button type="button" class="btn btn-default">6</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">7</button>
+                                    <button type="button" class="btn btn-default">8</button>
+                                    <button type="button" class="btn btn-default">9</button>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="btn-toolbar" role="toolbar">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">1</button>
+                                    <button type="button" class="btn btn-primary">2</button>
+                                    <button type="button" class="btn btn-primary">3</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">4</button>
+                                    <button type="button" class="btn btn-primary">5</button>
+                                    <button type="button" class="btn btn-primary">6</button>
+                                </div>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">7</button>
+                                    <button type="button" class="btn btn-primary">8</button>
+                                    <button type="button" class="btn btn-primary">9</button>
+                                </div>
+                            </div>
+
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-5">Button Group Sizing</p>
+                            <small>Instead of applying button sizing classes to every button in a group, just add '.btn-group-*' to each '.btn-group', including when nesting multiple groups.</small>
+
+                            <br/>
+                            <br/>
+
+                            <div class="btn-group-demo">
+                                <div class="btn-group btn-group-lg" role="group">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+
+                                <div class="btn-group btn-group-lg" role="group">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="btn-group-demo">
+                                <div class="btn-group btn-group" role="group">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+
+                                <div class="btn-group btn-group" role="group">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="btn-group-demo">
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+
+                                <div class="btn-group btn-group-sm" role="group">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="btn-group-demo">
+                                <div class="btn-group btn-group-xs" role="group">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+
+                                <div class="btn-group btn-group-xs" role="group">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-5">Nesting</p>
+                            <small>Place a '.btn-group' within another '.btn-group' when you want dropdown menus mixed with a series of buttons.</small>
+
+                            <br/>
+                            <br/>
+
+                            <div class="btn-group-demo">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">1</button>
+                                    <button type="button" class="btn btn-default">2</button>
+
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                            Dropdown
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="dropdown-item"><a class="nav-link" href="#">Dropdown link</a></li>
+                                            <li class="dropdown-item"><a class="nav-link" href="#">Dropdown link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary">1</button>
+                                    <button type="button" class="btn btn-primary">2</button>
+
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                                            Dropdown
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" role="menu">
+                                            <li class="dropdown-item"><a class="nav-link" href="#">Dropdown link</a></li>
+                                            <li class="dropdown-item"><a class="nav-link" href="#">Dropdown link</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <br/>
+                            <br/>
+                            <br/>
+
+                            <p class="f-500 c-black m-b-5">Justified Button Groups</p>
+                            <small>Make a group of buttons stretch at equal sizes to span the entire width of its parent. Also works with button dropdowns within the button group.</small>
+
+                            <br/>
+                            <br/>
+
+                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-default">Left</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-default">Middle</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-default">Right</button>
+                                </div>
+                            </div>
+
+                            <br/>
+
+                            <div class="btn-group btn-group-justified" role="group" aria-label="...">
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-primary">Left</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-primary">Middle</button>
+                                </div>
+                                <div class="btn-group" role="group">
+                                    <button type="button" class="btn btn-primary">Right</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="../../assets/js/vendor/holder.min.js"></script>
+		<script src="../../assets/js/vendor/tether.min.js"></script>
+		<script>
+			$(function () {
+				Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+			});
+		</script>
+		<script src="../../dist/js/bootstrap.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>
