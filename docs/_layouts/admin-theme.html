@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="../../favicon.ico">
+
+	<title>{{ page.title }} : Admin MDL theme</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="admin.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="body" data-scrolleffect>
+	<div class="navbar navbar-light bg-faded navbar-fixed-top h-box header scrolleffect-top">
+		<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="drawer" data-target="#drawer-panel">
+			&#9776;
+		</button>
+		<div class="logo-container">
+			<h4>Material</h4>
+			<div class="tag-line">admin extended</div>
+		</div>
+		<div class="flex h-box center hidden-sm-down">
+			<input class="flex search-input" placeholder="Search">
+		</div>
+		<div class="h-box center">
+			<div class="dropdown">
+				<div class="round profile-img dropdown-toggle no-arrow"
+					data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+					style="background-image:url(https://s3.amazonaws.com/uifaces/faces/twitter/tonystubblebine/128.jpg);"
+				></div>
+				<div class="dropdown-menu dropdown-menu-right" v-offset="-44" h-offset="-2">
+					<a class="dropdown-item icon" href="#"><i class="fa fa-sign-in"></i> Sign IN</a>
+					<a class="dropdown-item icon" href="#"><i class="fa fa-gear"></i> Settings</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="content-wrapper h-box">
+		<div class="drawer-panel" id="drawer-panel">
+			<h2 class="drawer-header hidden-lg-up h-box center">Material</h2>
+			<div class="drawer-top-header hidden-md-down h-box center">
+				<button class="btn btn-fab-small btn-default active"><i class="fa fa-user"></i></button>
+				<button class="btn btn-fab-small btn-default"><i class="fa fa-th"></i></button>
+				<button class="btn btn-fab-small btn-default"><i class="fa fa-sign-in"></i></button>
+			</div>
+			<div class="drawer-content">
+				<ul class="nav nav-pills nav-stacked" data-toggle="drawer">
+					<!--li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fa fa-home"></i> Home
+						</a>
+						<div class="dropdown-menu" h-offset="10">
+							<a class="dropdown-item icon" href="#"><i class="fa fa-sign-in"></i> Sign IN</a>
+							<a class="dropdown-item icon" href="#"><i class="fa fa-gear"></i> Settings</a>
+						</div>
+					</li-->
+					<li class="nav-item"><a class="nav-link active" href="/"><i class="fa fa-home"></i> Home</a></li>
+					<li class="nav-item"><a class="nav-link" href="icons.html"><i class="fa fa-user"></i> Icons</a></li>
+					<li class="nav-item"><a class="nav-link" href="buttons.html"><i class="fa fa-gear"></i> Buttons</a></li>
+					<li class="nav-item"><a class="nav-link" href="typography.html"><i class="fa fa-glass"></i> Typography</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="main-contents flex container">
+			{{content}}
+		</div>
+	</div>
+	</div>
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="../../assets/js/vendor/holder.min.js"></script>
+		<script src="../../assets/js/vendor/tether.min.js"></script>
+		<script>
+			$(function () {
+				Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+			});
+		</script>
+		<script src="../../dist/js/bootstrap.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

@@ -8,6 +8,15 @@ kramdown:
 # Permalinks
 permalink:        pretty
 
+defaults:
+  -
+    scope:
+      path: "examples/admin"
+      type: "pages"
+    values:
+      layout: "admin-theme"
+      permalink: /:path/:basename.html
+
 # Server
 source:           docs
 destination:      _gh_pages
