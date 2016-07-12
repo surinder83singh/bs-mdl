@@ -367,7 +367,7 @@ value:function update(){var $el=Checkbox.getRootEl(this._element);var $input=$el
    * ------------------------------------------------------------------------
    */ // getters
 _createClass(Drawer,null,[{key:'toggle', // public
-value:function toggle(){var $el=$(document.body);var $drawer=$el.find('.drawer-panel');if($drawer.css("position") != "fixed")return;if($el.hasClass(ClassName.ACTIVE)){$backdrop.fadeOut();}else {$backdrop.fadeIn();}$el.toggleClass(ClassName.ACTIVE);} /*dispose() {
+value:function toggle(event){var $el=$(document.body);var $drawer=$el.find('.drawer-panel');if($drawer.css("position") != "fixed")return;if(event && event.preventDefault){event.preventDefault();}if($el.hasClass(ClassName.ACTIVE)){$backdrop.fadeOut();}else {$backdrop.fadeIn();}$el.toggleClass(ClassName.ACTIVE);} /*dispose() {
       $.removeData(this._element, DATA_KEY)
       this._element = null
     }*/ // static
@@ -376,7 +376,7 @@ value:function toggle(){var $el=$(document.body);var $drawer=$el.find('.drawer-p
         if (!data) {
           //data = new Drawer(this)
           //$(this).data(DATA_KEY, data)
-        }*/if(config === 'toggle'){toggle();}});}},{key:'VERSION',get:function get(){return VERSION;}}]);return Drawer;})();$(document).on(Event.CLICK_DATA_API,Selector.DATA_TOGGLE,function(event){event.preventDefault();Drawer.toggle();});var $backdrop=$("<div class='drawer-backdrop' data-toggle='drawer'></div>");$backdrop.appendTo(document.body); /**
+        }*/if(config === 'toggle'){toggle();}});}},{key:'VERSION',get:function get(){return VERSION;}}]);return Drawer;})();$(document).on(Event.CLICK_DATA_API,Selector.DATA_TOGGLE,function(event){Drawer.toggle(event);});var $backdrop=$("<div class='drawer-backdrop' data-toggle='drawer'></div>");$backdrop.appendTo(document.body); /**
    * ------------------------------------------------------------------------
    * jQuery
    * ------------------------------------------------------------------------

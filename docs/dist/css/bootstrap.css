@@ -7216,7 +7216,8 @@ input[type="button"].btn-block {
   line-height: 100%;
 }
 
-.card-header h2 + small {
+.card-header h2 + small,
+.card-header h2 + p {
   display: inline-block;
   margin-top: .5rem;
 }

@@ -123,7 +123,8 @@
   font-weight: 400;
 }
 
-.card-header h2+small{margin-top: 0.5rem;display: inline-block;}
+.card-header h2+small,
+.card-header h2+p{margin-top: 0.5rem;display: inline-block;}
 
 .card-footer {
   padding: $card-spacer-y $card-spacer-x;

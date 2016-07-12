@@ -77,10 +77,14 @@
 
         // public
 
-        value: function toggle() {
+        value: function toggle(event) {
           var $el = $(document.body);
           var $drawer = $el.find('.drawer-panel');
           if ($drawer.css("position") != "fixed") return;
+
+          if (event && event.preventDefault) {
+            event.preventDefault();
+          }
 
           if ($el.hasClass(ClassName.ACTIVE)) {
             $backdrop.fadeOut();
@@ -123,8 +127,7 @@
     })();
 
     $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
-      event.preventDefault();
-      Drawer.toggle();
+      Drawer.toggle(event);
     });
 
     var $backdrop = $("<div class='drawer-backdrop' data-toggle='drawer'></div>");

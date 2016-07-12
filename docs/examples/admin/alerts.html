@@ -1,0 +1,78 @@
+---
+title: Alerts
+icon: exclamation
+---
+
+<div class="row">
+    <div class="col-sm-12">
+        <div class="card-header light-header p-b-0">
+            <h2>Alerts</h2>
+            <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+        </div>
+        <div class="card">
+            <div class="card-header">
+                <h2>Basic Example</h2>
+                <small>Wrap any text and an optional dismiss button in '.alert' and one of the four contextual classes (e.g., .alert-success) for basic alert messages.</small>
+            </div>
+
+            <div class="card-body card-padding">
+                <div class="alert alert-success" role="alert">Well done! You successfully read this important alert message.</div>
+                <div class="alert alert-info" role="alert">Heads up! This alert needs your attention, but it's not super important.</div>
+                <div class="alert alert-warning" role="alert">Warning! Better check yourself, you're not looking too good.</div>
+                <div class="alert alert-danger" role="alert">Oh snap! Change a few things up and try submitting again.</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Dismissible Alerts</h2>
+                <small>Build on any alert by adding an optional '.alert-dismissible' and close button.</small>
+            </div>
+
+            <div class="card-body card-padding">
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Well done! You successfully read this important alert message.
+                </div>
+                <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Heads up! This alert needs your attention, but it's not super important.
+                </div>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Warning! Better check yourself, you're not looking too good.
+                </div>
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Oh snap! Change a few things up and try submitting again.
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <h2>Links in alerts</h2>
+                <small>Use the '.alert-link' utility class to quickly provide matching colored links within any alert.</small>
+            </div>
+
+            <div class="card-body card-padding">
+                <div class="alert alert-success alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Well done! You successfully read <a href="" class="alert-link">this important alert message.</a>
+                </div>
+                <div class="alert alert-info alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Heads up! This <a href="" class="alert-link">alert needs your attention</a>, but it's not super important.
+                </div>
+                <div class="alert alert-warning alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Warning! Better check yourself, you're <a href="" class="alert-link">not looking too good.</a>
+                </div>
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    Oh snap! <a href="" class="alert-link">Change a few things up</a> and try submitting again.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
