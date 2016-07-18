@@ -1,0 +1,22 @@
+				<table class="table {{include.cls}}">
+	                <thead class="{{include.theadcls}}">
+	                    <tr>
+	                        <th>#</th>
+	                        <th>First Name</th>
+	                        <th>Last Name</th>
+	                        <th>Username</th>
+	                        <th>Nickname</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                	{% for user in site.data.users %}
+	                	<tr>
+	                        <td>{{forloop.index}}</td>
+	                        <td>{{user.first}}</td>
+	                        <td>{{user.last}}</td>
+	                        <td>@{{user.username}}</td>
+	                        <td>{{user.nickname}}</td>
+	                    </tr>
+	                	{%endfor%}
+	                </tbody>
+	            </table>

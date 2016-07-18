@@ -330,8 +330,8 @@ $input-height-sm:                (($font-size-sm * $line-height-sm) + ($input-pa
 
 $form-group-margin-bottom:       $spacer-y !default;
 
-$input-group-addon-bg:           $gray-lighter !default;
-$input-group-addon-border-color: $input-border-color !default;
+$input-group-addon-bg:           transparent;
+$input-group-addon-border-color: transparent;
 
 $cursor-disabled:                not-allowed !default;
 $checkbox-border-color:       $input-border-color;

@@ -1,0 +1,110 @@
+---
+title: Tables
+icon: table
+---
+<div class="container">
+	<div class="row">
+		<div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Basic Table</h2>
+	            <small>Basic example without any additional modification classes</small>
+	        </div>
+	        <div class="table-responsive">
+	            {% include_relative _table.html %}
+	        </div>
+	    </div>
+
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Striped rows</h2>
+	            <small>Use .table-striped to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code></small>
+	        </div>
+
+	        <div class="table-responsive">
+	        	{% include_relative _table.html cls="table-striped" %}
+	        </div>
+	    </div>
+
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Bordered table</h2>
+	            <small>Tables with borders on all possible sides of the Table and Cells</small>
+	        </div>
+
+	        <div class="table-responsive">
+	        	{% include_relative _table.html cls="table-bordered" %}
+	        </div>
+	    </div>
+
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Hoverable rows</h2>
+	            <small>Add <code>.table-hover</code> to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</small>
+	        </div>
+
+	        <div class="table-responsive">
+	        	{% include_relative _table.html cls="table-hover" %}
+	        </div>
+	    </div>
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Table head options</h2>
+	            <small>Use one of two modifier classes to make <code>&lt;thead&gt;</code>s appear light or dark gray.</small>
+	        </div>
+
+	        <div class="table-responsive">
+	        	{% include_relative _table.html cls="table-hover" theadcls="thead-inverse" %}
+	        </div>
+	    </div>
+
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Table Inverse</h2>
+	        </div>
+	        <div class="table-responsive">
+	        	{% include_relative _table.html cls="table-inverse" %}
+	        </div>
+	    </div>
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Small table</h2>
+	            <small>Add <code>.table-sm</code> to make tables more compact by cutting cell padding in half.</small>
+	        </div>
+	        <div class="table-responsive">
+	        	{% include_relative _table.html cls="table-sm" %}
+	        </div>
+	    </div>
+
+	    <div class="card shadow-2dp">
+	        <div class="card-header">
+	            <h2>Contextual classes</h2>
+	            <small>Use contextual classes to color table rows or individual cells.</small>
+	        </div>
+	        {%assign colors = "active,info,warning,success,danger,primary"|split: "," %}
+	        <div class="table-responsive">
+	            <table class="table">
+	                <thead>
+	                    <tr>
+	                        <th>#</th>
+	                        <th>First Name</th>
+	                        <th>Last Name</th>
+	                        <th>Username</th>
+	                        <th>Nickname</th>
+	                    </tr>
+	                </thead>
+	                <tbody>
+	                	{% for user in site.data.users %}{% if colors[forloop.index0] == null %}{% break %}{%endif%}
+	                	<tr class="table-{{colors[forloop.index0]}}">
+	                        <td>{{forloop.index}}</td>
+	                        <td>{{user.first}}</td>
+	                        <td>{{user.last}}</td>
+	                        <td>@{{user.username}}</td>
+	                        <td>{{user.nickname}}</td>
+	                    </tr>
+	                	{%endfor%}
+	                </tbody>
+	            </table>
+	        </div>
+	    </div>
+	</div>
+</div>

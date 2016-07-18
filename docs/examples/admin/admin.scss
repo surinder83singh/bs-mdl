@@ -1,3 +1,47 @@
+---
+---
+/* #2196f3 */
+$base-color: #009688 !default;
+$base-color: #2196f3;
+
+.table-inverse,
+.table-primary, .table-primary>td, .table-primary>th{
+  color:#FFF;
+}
+.table-inverse td, .table-inverse th, .table-inverse thead th{
+  border-color: rgba(255, 255, 255, 0.1);
+}
+.table .thead-inverse th{
+  border-bottom:0px;
+}
+.header,
+.content-wrapper:before,
+.drawer-header,
+.nav-pills .nav-item.open .nav-link,
+.nav-pills .nav-item.open .nav-link:focus,
+.nav-pills .nav-item.open .nav-link:hover,
+.nav-pills .nav-link.active,
+.nav-pills .nav-link.active:focus,
+.nav-pills .nav-link.active:hover,
+.table-inverse,
+.thead-inverse th,
+.table-primary, .table-primary>td, .table-primary>th,
+body > .body{
+  background-color: $base-color;
+}
+
+//.table-inverse,
+//.thead-inverse th{
+//  background-color: lighten($base-color, 5%)
+//}
+
+.drawer-content .nav-link.active,
+.drawer-content .nav-pills .nav-link.active:hover,
+.drawer-top-header .btn-fab-small.active,
+a{
+  color: $base-color;
+}
+
 body {
   font-size: .8125rem;
   line-height: 1.42857143;
@@ -36,16 +80,13 @@ body > .body {
 .nav-pills .nav-item.open .nav-link,
 .nav-pills .nav-item.open .nav-link:focus,
 .nav-pills .nav-item.open .nav-link:hover,
-.nav-pills .nav-link.active,
+//.nav-pills .nav-link.active,
 .nav-pills .nav-link.active:focus,
 .nav-pills .nav-link.active:hover,
 body > .body {
   color: #fff;
-  background-color: #009688;
 }
-a {
-  color: #009688;
-}
+
 .drawer-top-header,
 .content-wrapper:before {
   height: 140px;
@@ -87,14 +128,25 @@ a {
 .logo-container {
   min-width: 225px;
   margin: 0;
+  background: url(logo4.png) no-repeat left center;
+  background-size: contain;
+
+  /*background: #FFF;
+  background-size: contain;
+        -webkit-mask-repeat: no-repeat;
+    -webkit-mask-image: url(logo3.png);
+    -webkit-mask-size: contain;
+  */
 }
 .logo-container h4 {
+  display: none;
   margin-top: 0;
   margin-bottom: 0;
   font-size: 1.4375rem;
   font-weight: 700;
 }
 .tag-line {
+  display: none;
   font-size: 1.125rem;
   color: rgba(255,255, 255, .6);
 }
@@ -162,7 +214,6 @@ a.view-more {
 }
 .drawer-content .nav-link.active,
 .drawer-content .nav-pills .nav-link.active:hover {
-  color: #009688;
   background-color: transparent;
 }
 .drawer-content .nav-pills .nav-link.active:focus {
@@ -179,7 +230,6 @@ a.view-more {
   color: #fff;
 }
 .drawer-top-header .btn-fab-small.active {
-  color: #009688;
   background-color: #fff;
 }
 .round {
@@ -191,9 +241,9 @@ a.view-more {
   margin-left: 15px;
   background: no-repeat center;
   -webkit-background-size: cover;
-          background-size: cover;
+  background-size: cover;
   -webkit-box-shadow: 0 0 0 2px rgba(255, 255, 255, .5);
-          box-shadow: 0 0 0 2px rgba(255, 255, 255, .5);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, .5);
 }
 
 .dropdown-item.icon {
@@ -215,7 +265,7 @@ a.view-more {
 .is-scrolled > .scrolleffect-top,
 .drawer-header {
   -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
-          box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),0 3px 1px -2px rgba(0,0,0,.2),0 1px 5px 0 rgba(0,0,0,.12);
 }
 .card.can-scroll {
   overflow: hidden;
@@ -276,6 +326,7 @@ a.view-more {
   }
 }
 
+
 /* docs */
 .btn-demo .btn,
 .btn-group-demo > .btn-group {
@@ -294,7 +345,7 @@ a.view-more {
   position: absolute;
   left: 0;
   font-size: 20px;
-  color: #009688;
+  color: $base-color;
 }
 .demo [class*="col-"] {
   padding: 10px;

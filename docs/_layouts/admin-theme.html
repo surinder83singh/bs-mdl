@@ -63,25 +63,8 @@
 							<a class="dropdown-item icon" href="#"><i class="fa fa-gear"></i> Settings</a>
 						</div>
 					</li-->
-					{%for s in pages %}{% if s.layout == "admin-theme" %}
+					{%for s in pages %}{%assign ext = s.path | slice: -4, 4 %}{% if s.layout == "admin-theme" and ext != "scss" %}
 					<li class="nav-item"><a class="nav-link {% if s.url == page.url %}active{%endif%}" href="{{s.url}}"><i class="fa fa-{{s.icon}}"></i> {{ s.title }}</a></li>{%endif%}{%endfor%}
-					<!--li class="nav-item"><a class="nav-link active" href="/"><i class="fa fa-home"></i> Home</a></li>
-					<li class="nav-item"><a class="nav-link" href="icons.html"><i class="fa fa-user"></i> Icons</a></li>
-					<li class="nav-item"><a class="nav-link" href="buttons.html"><i class="fa fa-gear"></i> Buttons</a></li>
-					<li class="nav-item"><a class="nav-link" href="typography.html"><i class="fa fa-glass"></i> Typography</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-user"></i> Link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-gear"></i> Another link</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-glass"></i> Disabled</a></li>
-					<li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-th"></i> Link</a></li-->
 				</ul>
 			</div>
 		</div>
@@ -100,6 +83,7 @@
 		<script>
 			$(function () {
 				Holder.addTheme("thumb", { background: "#55595c", foreground: "#eceeef", text: "Thumbnail" });
+  				$('[data-toggle="tooltip"]').tooltip();
 			});
 		</script>
 		<script src="../../dist/js/bootstrap.js"></script>

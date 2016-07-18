@@ -7,8 +7,15 @@ kramdown:
 
 # Permalinks
 permalink:        pretty
+sass:
+  style: :expanded
 
 defaults:
+  -
+    scope:
+      path: "examples/admin/admin.scss"
+    values:
+      permalink: /:path/admin
   -
     scope:
       path: "examples/admin"

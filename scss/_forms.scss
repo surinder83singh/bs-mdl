@@ -67,12 +67,20 @@
 .form-group .form-element{
   position:relative;
 }
+.form-group .form-element{
+  background-color: $input-bg;
+}
+.form-group .form-element .form-control{
+  background-color:transparent;
+}
 .form-group .form-element .form-control:focus{
   border-bottom-color: $input-border-color;
 }
 .form-group .form-element::after{
   content: "";
   bottom: 0px;
+  left:0px;
+  z-index:5;
   width: 100%;
   height:2px;
   background-color: $input-border-focus;

@@ -14,7 +14,7 @@ const Input = (($) => {
    * ------------------------------------------------------------------------
    */
 
-  const NAME                = 'input'
+  const NAME                = 'bsinput'
   const VERSION             = '4.0.0-alpha'
   const DATA_KEY            = 'bs.input'
   const EVENT_KEY           = `.${DATA_KEY}`
@@ -58,6 +58,14 @@ const Input = (($) => {
       return VERSION
     }
 
+    static updateClasses(el){
+      let group = $(el).closest(Selector.FORM_GROUP)[0];
+      let $element = $(group).find(Selector.INPUT);
+      if (!$element.length || $element.attr("type") == "radio" || $element.attr("type") == "checkbox")
+        return
+      $(group).toggleClass(ClassName.HAS_CONTENT, !!$element.val().length);
+    }
+
 
     // public
 
@@ -67,12 +75,14 @@ const Input = (($) => {
 
     static _jQueryInterface(config) {
       return this.each(function () {
+        /*
         let data = $(this).data(DATA_KEY)
-
         if (!data) {
           data = new Input(this)
           $(this).data(DATA_KEY, data)
         }
+        */
+        Input.updateClasses(this);
       })
     }
 
@@ -87,15 +97,14 @@ const Input = (($) => {
 
   $(document)
     .on(Event.CHANGE_DATA_API, Selector.FORM_GROUP, (event) => {
-      let group = $(event.target).closest(Selector.FORM_GROUP)[0];
-      let $element = $(group).find(Selector.INPUT);
-      if (!$element.length || $element.attr("type") == "radio" || $element.attr("type") == "checkbox")
-        return
-      $(group).toggleClass(ClassName.HAS_CONTENT, !!$element.val().length);
+      Input.updateClasses(event.target);
     })
     .on(Event.FOCUS_BLUR_DATA_API, Selector.FORM_GROUP, (event) => {
       let group = $(event.target).closest(Selector.FORM_GROUP)[0];
       $(group).toggleClass(ClassName.FOCUS, /^focus(in)?$/.test(event.type))
+    })
+    .ready(function(){
+      $(Selector.FORM_GROUP)[NAME]();
     })
 
 

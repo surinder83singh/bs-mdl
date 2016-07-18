@@ -19,7 +19,7 @@ var Input = (function ($) {
    * ------------------------------------------------------------------------
    */
 
-  var NAME = 'input';
+  var NAME = 'bsinput';
   var VERSION = '4.0.0-alpha';
   var DATA_KEY = 'bs.input';
   var EVENT_KEY = '.' + DATA_KEY;
@@ -64,20 +64,30 @@ var Input = (function ($) {
     // getters
 
     _createClass(Input, null, [{
-      key: '_jQueryInterface',
+      key: 'updateClasses',
+      value: function updateClasses(el) {
+        var group = $(el).closest(Selector.FORM_GROUP)[0];
+        var $element = $(group).find(Selector.INPUT);
+        if (!$element.length || $element.attr("type") == "radio" || $element.attr("type") == "checkbox") return;
+        $(group).toggleClass(ClassName.HAS_CONTENT, !!$element.val().length);
+      }
 
       // public
 
       // static
 
+    }, {
+      key: '_jQueryInterface',
       value: function _jQueryInterface(config) {
         return this.each(function () {
-          var data = $(this).data(DATA_KEY);
-
+          /*
+          let data = $(this).data(DATA_KEY)
           if (!data) {
-            data = new Input(this);
-            $(this).data(DATA_KEY, data);
+            data = new Input(this)
+            $(this).data(DATA_KEY, data)
           }
+          */
+          Input.updateClasses(this);
         });
       }
     }, {
@@ -91,13 +101,12 @@ var Input = (function ($) {
   })();
 
   $(document).on(Event.CHANGE_DATA_API, Selector.FORM_GROUP, function (event) {
-    var group = $(event.target).closest(Selector.FORM_GROUP)[0];
-    var $element = $(group).find(Selector.INPUT);
-    if (!$element.length || $element.attr("type") == "radio" || $element.attr("type") == "checkbox") return;
-    $(group).toggleClass(ClassName.HAS_CONTENT, !!$element.val().length);
+    Input.updateClasses(event.target);
   }).on(Event.FOCUS_BLUR_DATA_API, Selector.FORM_GROUP, function (event) {
     var group = $(event.target).closest(Selector.FORM_GROUP)[0];
     $(group).toggleClass(ClassName.FOCUS, /^focus(in)?$/.test(event.type));
+  }).ready(function () {
+    $(Selector.FORM_GROUP)[NAME]();
   });
 
   /**
